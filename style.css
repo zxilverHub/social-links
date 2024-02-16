@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: #ffffff;
+    --grey: hsl(0, 0%, 20%);
+    --dark-grey: hsl(0, 0%, 12%);
+    --off-black: hsl(0, 0%, 8%);
+
+    --text: 0.875rem;
+
+    --weight-sm: 400;
+    --weight-md: 600;
+    --weight-lg: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: var(--weight-sm);
+    color: var(--white);
+    font-size: var(--text);
+}
+
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--off-black);
+}
+
+.flex {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--dark-grey);
+    border-radius: 15px;
+    padding: 2rem;
+    gap: .5rem;
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.location {
+    color: var(--green);
+    margin-bottom: 1rem;
+    font-weight: var(--weight-md);
+}
+
+h1 {
+    font-weight: var(--weight-md);
+    font-size: 1.5rem;
+}
+
+.links {
+    gap: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.links a {
+    width: 100%;
+    padding: .8rem;
+    text-decoration: none;
+    background-color: var(--grey);
+    border-radius: 8px;
+    text-align: center;
+}
+
+.bio {
+    opacity: .8;
+}
