@@ -83,8 +83,15 @@ h1 {
     background-color: var(--grey);
     border-radius: 8px;
     text-align: center;
+    font-weight: var(--weight-lg);
+    transition-duration: .3s;
 }
 
 .bio {
     opacity: .8;
+}
+
+.links a:hover {
+    background-color: var(--green);
+    color: var(--off-black);
 }
